@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>|Transition and Transform</title>
+    <style>
+        .bat{
+            transition: transform 0.2 s ease-in;
+        }
+        .ficld{
+            border: 1px solid;
+        }
+        .boll{
+            width: 50px;
+            height: 50px;
+            background-color: brown;
+            border-radius: 25px;
+            position: relative;
+            left: 200px;
+            transition: transform 1s ease-out 0.2;
+        }
+          
+        .ficld:hover.boll{
+            transform: translate(500px);
+        }
+        .ficld:hover.bat{
+            transform: rotate(-60deg);
+            transform-origin: top right;
+        }
+    </style>
+</head>
+<body>
+    <div class="ficld">
+        <img class="bat" src="cricket-bat-thumb.png" alt="">
+  
+        <div class="boll"></div>
+    </div>    
+
+</body>
+</html>
